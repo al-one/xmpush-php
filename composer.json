@@ -1,0 +1,21 @@
+{
+    "name": "al-one/xmpush-php",
+    "description": "小米推送 XiaoMi Push PHP Server SDK",
+    "keywords": ["xmpush", "xiaomi"],
+    "authors": [
+        {
+            "name": "Xiaomi",
+            "email": "developer@xiaomi.com",
+            "homepage": "http://www.mipush.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "xmpush\\": "sdk/xmpush/"
+        }
+    },
+    "license": "MIT"
+}
