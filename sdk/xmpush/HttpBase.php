@@ -69,6 +69,7 @@ class HttpBase {
         if (Constants::$autoSwitchHost && ServerSwitch::getInstance()->needRefreshHostList()) {
             array_push($headers, Constants::X_PUSH_HOST_LIST . ': true');
         }
+        array_push($headers, "Expect:");
 
         // Open connection
         $ch = curl_init();
