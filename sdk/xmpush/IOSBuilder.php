@@ -39,6 +39,14 @@ class IOSBuilder extends Message {
         $this->extra(IOSBuilder::badge, $badge);
     }
 
+    public function contentAvailable($value) {
+        $this->extra("content-available", $value);
+    }
+
+    public function showContent() {
+        $this->extra("show-content", "1");
+    }
+
     public function extra($key, $value) {
         $this->extra[$key] = $value;
     }
